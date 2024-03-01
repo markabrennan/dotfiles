@@ -9,18 +9,18 @@
     - ~/dotfiles/vim/bundle
 
 - link:
-    ~/.vim: ~/dotfiles/vim
-    ~/.vimrc: ~/dotfiles/vimrc
-    ~/.zshrc: ~/dotfiles/zshrc
-    ~/.zprofile: ~/dotfiles/zprofile
-    ~/.gitconfig: ~/dotfiles/gitconfig
-    ~/.gitignore: ~/dotfiles/gitignore
-    ~/.vim/bundle/Vundle.vim: ~/dotfiles/Vundle.vim
-    ~/.vim/bundle/coc.nvim: ~/dotfiles/coc.nvim
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.zprofile: zprofile
+    ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
+    ~/.vim/bundle/Vundle.vim: Vundle.vim
+    ~/.vim/bundle/coc.nvim: coc.nvim
 
 - shell:
     - command: command -v npm || brew install npm
       stdin: true
       stdout: true
-  #- [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
 
