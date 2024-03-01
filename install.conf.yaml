@@ -13,8 +13,8 @@
     ~/.gitignore:
     ~/.vim/bundle/Vundle.vim: ~/dotfiles/Vundle.vim
 
-#- create:
-    #- ~/.vim/undo-history
+- create:
+    - ~/.vim/undo-history
 
 - shell:
     - command: command -v npm || brew install npm
