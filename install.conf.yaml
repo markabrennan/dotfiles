@@ -11,7 +11,8 @@
     ~/.zprofile:
     ~/.gitconfig:
     ~/.gitignore:
-    #~/.vim/bundle/Vundle.vim: ~/dotfiles/Vundle.vim
+    ~/.vim/bundle/Vundle.vim: ~/dotfiles/Vundle.vim
+    ~/.vim/bundle/coc.nvim: ~/dotfiles/coc.nvim
 
 - create:
     - ~/.vim/undo-history
