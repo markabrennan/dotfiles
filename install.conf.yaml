@@ -4,21 +4,23 @@
 
 - clean: ['~']
 
+- create:
+    - ~/dotfiles/vim/undo-history
+    - ~/dotfiles/vim/bundle
+
 - link:
-    ~/.vim: 
-    ~/.vimrc: 
-    ~/.zshrc:
-    ~/.zprofile:
-    ~/.gitconfig:
-    ~/.gitignore:
+    ~/.vim: ~/dotfiles/vim
+    ~/.vimrc: ~/dotfiles/vimrc
+    ~/.zshrc: ~/dotfiles/zshrc
+    ~/.zprofile: ~/dotfiles/zprofile
+    ~/.gitconfig: ~/dotfiles/gitconfig
+    ~/.gitignore: ~/dotfiles/gitignore
     ~/.vim/bundle/Vundle.vim: ~/dotfiles/Vundle.vim
     ~/.vim/bundle/coc.nvim: ~/dotfiles/coc.nvim
 
-- create:
-    - ~/.vim/undo-history
-
 - shell:
     - command: command -v npm || brew install npm
-    - cd ~/.vim/bundle/coc.nvim && npm ci
+      stdin: true
+      stdout: true
   #- [git submodule update --init --recursive, Installing submodules]
 
