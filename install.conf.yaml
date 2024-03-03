@@ -24,8 +24,8 @@
       stdin: true
       stdout: true
     - cd coc.nvim && npm ci
-    # This is necessary, but may not work via script, so would
+    # This is necessary, but does not work as scripted;
     # have to be run manually inside Vim, as `:CocInstall coc-pyright`
-    - vim -c 'PluginInstall' =c 'qa!'
-    - vim -c 'CocInstall coc-pyright' -c 'qa!'
+    #- vim -c 'PluginInstall' =c 'qa!'
+    #- vim -c 'CocInstall coc-pyright' -c 'qa!'
 
