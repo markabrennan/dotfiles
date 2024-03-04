@@ -30,14 +30,17 @@ set smartcase
 " VUNDLE Setup
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
 
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+"Plugin 'gmarik/Vundle.vim'
+
+
+call plug#begin('~/.vim/plugged')
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -45,26 +48,26 @@ Plugin 'gmarik/Vundle.vim'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
-Plugin 'junegunn/fzf'
-Plugin 'neoclide/coc.nvim', {'branch': 'release'}
-Plugin 'preservim/nerdcommenter'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'nvie/vim-flake8'
-Plugin 'mhinz/vim-grepper'
-Plugin 'tell-k/vim-autopep8'
-Plugin 'psf/black'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'tpope/vim-vinegar'
-Plugin 'jlanzarotta/bufexplorer'
-Plugin 'github/copilot.vim'
-Plugin 'duff/vim-scratch'
-Plugin 'vim-airline/vim-airline'
-Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'vim-scripts/ScrollColors'
-Plugin 'tpope/vim-obsession'
-Plugin 'mhinz/vim-startify'
-Plugin 'tpope/vim-dadbod'
+Plug 'junegunn/fzf'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdcommenter'
+Plug 'vim-syntastic/syntastic'
+Plug 'nvie/vim-flake8'
+Plug 'mhinz/vim-grepper'
+Plug 'tell-k/vim-autopep8'
+Plug 'psf/black'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-vinegar'
+Plug 'jlanzarotta/bufexplorer'
+Plug 'github/copilot.vim'
+Plug 'duff/vim-scratch'
+Plug 'vim-airline/vim-airline'
+"Plug 'NLKNguyen/papercolor-theme'
+Plug 'flazz/vim-colorschemes'
+Plug 'vim-scripts/ScrollColors'
+Plug 'tpope/vim-obsession'
+Plug 'mhinz/vim-startify'
+Plug 'tpope/vim-dadbod'
 
 " Previous color schemes that have been discarded for now
 "Plugin 'dracula/vim', { 'name': 'dracula' }
@@ -73,7 +76,8 @@ Plugin 'tpope/vim-dadbod'
 filetype plugin on
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+"call vundle#end()            " required
+call plug#end()
 filetype plugin indent on    " required
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -160,7 +164,7 @@ inoremap <expr> k pumvisible() ? "\C-p>" : "k"
 set t_Co=256
 "color molokai
 "colorscheme industry
-colorscheme PaperColor
+"colorscheme PaperColor
 set background=dark
 "let g:molokai_original = 1
 let g:rehash256 = 1
@@ -254,3 +258,4 @@ autocmd FileType qf setlocal winheight=25
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
+colorscheme PaperColor

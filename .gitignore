@@ -1,3 +1,5 @@
-vim/bundle/*
+vim/autoload/*
+vim/colors/*
+vim/plugged/*
 vim/.netrwhist
 .netrwhist

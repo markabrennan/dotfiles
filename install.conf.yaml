@@ -6,7 +6,10 @@
 
 - create:
     - ~/dotfiles/vim/undo-history
-    - ~/dotfiles/vim/bundle
+    - ~/dotfiles/vim/plugged
+    - ~/dotfiles/vim/autoload
+    - ~/dotfiles/vim/colors
+
 
 - link:
     ~/.vim: vim
@@ -15,8 +18,9 @@
     ~/.zprofile: zprofile
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
-    ~/.vim/bundle/Vundle.vim: Vundle.vim
-    ~/.vim/bundle/coc.nvim: coc.nvim
+    ~/.vim/autoload/plug.vim: vim-plug/plug.vim
+    ~/.vim/plugged/coc.nvim: coc.nvim
+    ~/.vim/colors/PaperColor.vim: papercolor-theme/colors/PaperColor.vim 
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
@@ -24,8 +28,7 @@
       stdin: true
       stdout: true
     - cd coc.nvim && npm ci
-    # This is necessary, but does not work as scripted;
-    # have to be run manually inside Vim, as `:CocInstall coc-pyright`
-    #- vim -c 'PluginInstall' =c 'qa!'
-    #- vim -c 'CocInstall coc-pyright' -c 'qa!'
+    - vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa"
+    - vim -es -u vimrc -i NONE -c "PlugUpdate" -c "qa"
+    - vim -es -u vimrc -i NONE -c "CocInstall coc-pyright" -c "qa"
 

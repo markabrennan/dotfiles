@@ -8,3 +8,9 @@
 [submodule "coc.nvim"]
 	path = coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+[submodule "vim-plug"]
+	path = vim-plug
+	url = https://github.com/junegunn/vim-plug.git
+[submodule "papercolor-theme"]
+	path = papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme
