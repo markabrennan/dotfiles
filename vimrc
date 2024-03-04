@@ -27,27 +27,13 @@ set smartcase
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-" VUNDLE Setup
+" Vim Plug Setup
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-" set the runtime path to include Vundle and initialize
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
-
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-"Plugin 'gmarik/Vundle.vim'
-
-
 call plug#begin('~/.vim/plugged')
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-" add all your plugins here (note older versions of Vundle
-" used Bundle instead of Plugin)
 Plug 'junegunn/fzf'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
@@ -62,6 +48,9 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'github/copilot.vim'
 Plug 'duff/vim-scratch'
 Plug 'vim-airline/vim-airline'
+" Paper Color theme is no longer managed as a plugin
+" but rather as submodule in Dotfiles project, and 
+" statically linked.
 "Plug 'NLKNguyen/papercolor-theme'
 Plug 'flazz/vim-colorschemes'
 Plug 'vim-scripts/ScrollColors'
@@ -76,7 +65,6 @@ Plug 'tpope/vim-dadbod'
 filetype plugin on
 
 " All of your Plugins must be added before the following line
-"call vundle#end()            " required
 call plug#end()
 filetype plugin indent on    " required
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -164,7 +152,7 @@ inoremap <expr> k pumvisible() ? "\C-p>" : "k"
 set t_Co=256
 "color molokai
 "colorscheme industry
-"colorscheme PaperColor
+colorscheme PaperColor
 set background=dark
 "let g:molokai_original = 1
 let g:rehash256 = 1

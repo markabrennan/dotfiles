@@ -27,7 +27,7 @@
     - command: command -v npm || brew install npm
       stdin: true
       stdout: true
-    - cd coc.nvim && npm ci
+    - cd coc.nvim && npm install && npm ci
     - vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa"
     - vim -es -u vimrc -i NONE -c "PlugUpdate" -c "qa"
     - vim -es -u vimrc -i NONE -c "CocInstall coc-pyright" -c "qa"
