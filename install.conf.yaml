@@ -16,13 +16,13 @@
       path: vim
       force: true
     ~/.vimrc:
-      path: vim/vimrc
+      path: vimrc
       force: true
     ~/.zshrc:
-      path: zsh/zshrc
+      path: zshrc
       force: true
     ~/.zprofile:
-      path: zsh/zprofile
+      path: zprofile
       force: true
     # Note that oh-my-zsh is s submodule, and linked as such;
     # additionally, my oh-my-zsh plugins are also managed
