@@ -61,6 +61,8 @@ brew "openjpeg"
 brew "poppler"
 # Geospatial Data Abstraction Library
 brew "gdal"
+# GitHub command-line tool
+brew "gh"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Lightweight and flexible command-line JSON processor
@@ -125,14 +127,9 @@ cask "dbeaver-community"
 cask "session-manager-plugin"
 mas "Alfred", id: 405843582
 mas "Fantastical", id: 975937182
-mas "GarageBand", id: 682658836
-mas "Keynote", id: 409183694
 mas "Kindle Classic", id: 405399194
 mas "LG Screen Manager", id: 1142051783
-mas "Numbers", id: 409203825
 mas "OneTab", id: 1540160809
-mas "Pages", id: 409201541
-mas "PomoDone App", id: 1096128050
 mas "Ulysses", id: 1225570693
 mas "WhatsApp", id: 1147396723
 mas "Xcode", id: 497799835
