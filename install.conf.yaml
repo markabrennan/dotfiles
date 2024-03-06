@@ -10,7 +10,6 @@
     - ~/dotfiles/vim/autoload
     - ~/dotfiles/vim/colors
 
-
 - link:
     ~/.vim:
       path: vim
@@ -27,7 +26,7 @@
     # Note that oh-my-zsh is s submodule, and linked as such;
     # additionally, my oh-my-zsh plugins are also managed
     # as submodules, and linked as such.
-  ~/.oh-my-zsh:
+    ~/.oh-my-zsh:
       path: ohmyzsh
       force: true
       create: true
