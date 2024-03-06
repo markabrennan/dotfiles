@@ -8,7 +8,6 @@
 # in the middle of the script
 sudo -v
 
-echo "\n<<< Checking for Xcode Command Line Tools >>>\n"
 
 ##
 ##
@@ -16,6 +15,7 @@ echo "\n<<< Checking for Xcode Command Line Tools >>>\n"
 ##  it's working.
 ##
 # Check if Xcode Command Line Tools are installed
+#echo "\n<<< Checking for Xcode Command Line Tools >>>\n"
 #if xcode-select -p &>/dev/null; then
     #echo "Xcode Command Line Tools already installed, checking for updates..."
     ## Consider prompting for manual update check or automate updates if possible
