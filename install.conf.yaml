@@ -55,7 +55,7 @@
     # Likewise, vim-plug, the paper color theme, and coc.nvim
     # are managed as submodules, and linked as such.
     ~/.vim/autoload/plug.vim:
-      path: plug.vim
+      path: vim-plug
       force: true
       create: true
     ~/.vim/plugged/coc.nvim:
