@@ -12,25 +12,61 @@
 
 
 - link:
-    ~/.vim: vim
-    ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
-    ~/.zprofile: zprofile
+    ~/.vim:
+      path: dotfiles/vim
+      force: true
+    ~/.vimrc:
+      path: dotfiles/vim/vimrc
+      force: true
+    ~/.zshrc:
+      path: dotfiles/zsh/zshrc
+      force: true
+    ~/.zprofile:
+      path: dotfiles/zsh/zprofile
+      force: true
     # Note that oh-my-zsh is s submodule, and linked as such;
     # additionally, my oh-my-zsh plugins are also managed
     # as submodules, and linked as such.
-    ~/.oh-my-zsh: ohmyzsh
-    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: zsh-autosuggestions
-    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
-    ~/.oh-my-zsh/custom/plugins/zsh-vi-mode: zsh-vi-mode
-    ~/.oh-my-zsh/custom/plugins/zsh-bat: zsh-bat
-    ~/.gitconfig: gitconfig
-    ~/.gitignore: gitignore
+    ~/.oh-my-zsh
+      path: ohmyzsh
+      force: true
+      create: true
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions:
+      path: zsh-autosuggestions
+      force: true
+      create: true
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting:
+      path: zsh-syntax-highlighting
+      force: true
+      create: true
+    ~/.oh-my-zsh/custom/plugins/zsh-vi-mode:
+      path: zsh-vi-mode
+      force: true
+      create: true
+    ~/.oh-my-zsh/custom/plugins/zsh-bat:
+      path: zsh-bat
+      force: true
+      create: true
+    ~/.gitconfig:
+      path: dotfiles/git/gitconfig
+      force: true
+    ~/.gitignore:
+      path: dotfiles/git/gitignore
+      force: true
     # Likewise, vim-plug, the paper color theme, and coc.nvim
     # are managed as submodules, and linked as such.
-    ~/.vim/autoload/plug.vim: vim-plug/plug.vim
-    ~/.vim/plugged/coc.nvim: coc.nvim
-    ~/.vim/colors/PaperColor.vim: papercolor-theme/colors/PaperColor.vim 
+    ~/.vim/autoload/plug.vim:
+      path: vim-plug/plug.vim
+      force: true
+      create: true
+    ~/.vim/plugged/coc.nvim:
+      path: coc.nvim
+      force: true
+      create: true
+    ~/.vim/colors/PaperColor.vim:
+      path: PaperColor
+      force: true
+      create: true
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
