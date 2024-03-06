@@ -16,8 +16,18 @@
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
+    # Note that oh-my-zsh is s submodule, and linked as such;
+    # additionally, my oh-my-zsh plugins are also managed
+    # as submodules, and linked as such.
+    ~/.oh-my-zsh: ohmyzsh
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: zsh-autosuggestions
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
+    ~/.oh-my-zsh/custom/plugins/zsh-vi-mode: zsh-vi-mode
+    ~/.oh-my-zsh/custom/plugins/zsh-bat: zsh-bat
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
+    # Likewise, vim-plug, the paper color theme, and coc.nvim
+    # are managed as submodules, and linked as such.
     ~/.vim/autoload/plug.vim: vim-plug/plug.vim
     ~/.vim/plugged/coc.nvim: coc.nvim
     ~/.vim/colors/PaperColor.vim: papercolor-theme/colors/PaperColor.vim 

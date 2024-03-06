@@ -14,3 +14,18 @@
 [submodule "papercolor-theme"]
 	path = papercolor-theme
 	url = https://github.com/NLKNguyen/papercolor-theme
+[submodule "ohmyzsh"]
+	path = ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh/
+[submodule "zsh-vi-mode"]
+	path = zsh-vi-mode
+	url = https://github.com/jeffreytse/zsh-vi-mode
+[submodule "zsh-autosuggestions"]
+	path = zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh-syntax-highlighting"]
+	path = zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "zsh-bat"]
+	path = zsh-bat
+	url = https://github.com/fdellwing/zsh-bat
