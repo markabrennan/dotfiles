@@ -10,19 +10,24 @@ sudo -v
 
 echo "\n<<< Checking for Xcode Command Line Tools >>>\n"
 
+##
+##
+##  Going to comment this out for now, as I don't think
+##  it's working.
+##
 # Check if Xcode Command Line Tools are installed
-if xcode-select -p &>/dev/null; then
-    echo "Xcode Command Line Tools already installed, checking for updates..."
-    # Consider prompting for manual update check or automate updates if possible
-else
-    echo "Xcode Command Line Tools not found, installing..."
-    sudo xcode-select --install
-    # Wait until the Xcode Command Line Tools are installed
-    until xcode-select -p &>/dev/null; do
-        sleep 5
-    done
-    echo "Xcode Command Line Tools installed."
-fi
+#if xcode-select -p &>/dev/null; then
+    #echo "Xcode Command Line Tools already installed, checking for updates..."
+    ## Consider prompting for manual update check or automate updates if possible
+#else
+    #echo "Xcode Command Line Tools not found, installing..."
+    #sudo xcode-select --install
+    ## Wait until the Xcode Command Line Tools are installed
+    #until xcode-select -p &>/dev/null; do
+        #sleep 5
+    #done
+    #echo "Xcode Command Line Tools installed."
+#fi
 
 echo "\n<<< Starting Homebrew Setup >>>\n"
 
