@@ -3,3 +3,4 @@ vim/colors/*
 vim/plugged/*
 vim/.netrwhist
 .netrwhist
+Brewfile.lock.json

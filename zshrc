@@ -173,6 +173,7 @@ function ec2get() {
 alias vim='mvim -v'
 alias vi='mvim -v'
 alias ll='eza -alF -snew' 
+alias xl='xplr'
 
 ###########################################################
 
