@@ -62,6 +62,10 @@
       path: coc.nvim
       force: true
       create: true
+    ~/.vim/coc-settings.json:
+      path: coc-settings.json
+      force: true
+      create: true
     ~/.vim/colors/PaperColor.vim:
       path: papercolor-theme/colors/PaperColor.vim
       force: true

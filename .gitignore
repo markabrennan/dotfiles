@@ -2,5 +2,6 @@ vim/autoload/*
 vim/colors/*
 vim/plugged/*
 vim/.netrwhist
+vim/coc-settings.json
 .netrwhist
 Brewfile.lock.json
