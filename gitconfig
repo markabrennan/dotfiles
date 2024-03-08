@@ -1,6 +1,6 @@
 [user]
 	name = Mark Brennan
-	email =
+	email = mark.brennan@blastpoint.io
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
