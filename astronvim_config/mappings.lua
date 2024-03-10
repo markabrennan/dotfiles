@@ -33,7 +33,7 @@ return {
     ["<leader>o"] = { ":only<cr>" },
     ["<leader>l"] = { ":noh<cr>" },
     -- ["<leader>f"] = { "/<c-r><c-w><cr>" },
-    vim.api.nvim_set_keymap('n', '<Leader>ex', ':e %:p:h<CR>', { noremap = true, silent = true }),
+    vim.api.nvim_set_keymap('n', '<Leader>d', ':e %:p:h<CR>', { noremap = true, silent = true }),
     ["<leader>mt"] = { "<cmd>wincmd K<cr>", desc = "Move window to the top" },
     ["<leader>mb"] = { "<cmd>wincmd J<cr>", desc = "Move window to the bottom" },
     ["<leader>ml"] = { "<cmd>wincmd H<cr>", desc = "Move window to the left" },

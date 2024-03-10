@@ -53,6 +53,17 @@ return {
       -- "pyright"
     },
   },
+  plugins = {
+    {
+      "jlanzarotta/bufexplorer",
+      keys = { "<leader>be" },
+    },
+    {
+      "github/copilot.vim",
+      cmd = "Copilot",
+    },
+    -- Add more plugins here
+  },
 
   -- Configure require("lazy").setup() options
   lazy = {
