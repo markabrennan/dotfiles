@@ -62,6 +62,13 @@ return {
       "github/copilot.vim",
       cmd = "Copilot",
     },
+    {
+      "nvie/vim-flake8",
+      ft = "python",
+      config = function()
+        -- Configuration options for vim-flake8, if any
+      end,
+    }
     -- Add more plugins here
   },
 
@@ -121,6 +128,12 @@ return {
 
     --
     --
+      vim.api.nvim_create_autocmd("FileType", {
+      pattern = "python",
+      callback = function()
+        vim.keymap.set("n", "<F3>", ":call flake8#Flake8()<CR>", { buffer = true, noremap = true, silent = true })
+      end,
+    })    --
       vim.g.netrw_list_hide = ''
       vim.api.nvim_set_hl(0, "Visual", { bg = "DarkGrey", fg = "white" })
       vim.opt.mouse = ""
