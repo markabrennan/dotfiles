@@ -38,6 +38,7 @@ return {
     ["<leader>mb"] = { "<cmd>wincmd J<cr>", desc = "Move window to the bottom" },
     ["<leader>ml"] = { "<cmd>wincmd H<cr>", desc = "Move window to the left" },
     ["<leader>mr"] = { "<cmd>wincmd L<cr>", desc = "Move window to the right" },
+    ["<leader>s"] = { "/<C-R><C-W><CR>", desc = "Search word under cursor" },
 
 
 
