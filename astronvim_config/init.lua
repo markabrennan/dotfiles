@@ -68,7 +68,12 @@ return {
       config = function()
         -- Configuration options for vim-flake8, if any
       end,
-    }
+    },
+    {
+      "tpope/vim-obsession",
+      cmd = "Obsession",
+        -- Configuration options for vim-flake8, if any
+    },
     -- Add more plugins here
   },
 
