@@ -9,6 +9,7 @@
     - ~/dotfiles/vim/plugged
     - ~/dotfiles/vim/autoload
     - ~/dotfiles/vim/colors
+    - ~/.config/nvim
 
 - link:
     ~/.vim:
@@ -70,6 +71,10 @@
       path: papercolor-theme/colors/PaperColor.vim
       force: true
       create: true
+    ~/.config/astronvim/lua/user:
+      path: astronvim_config
+      force: true
+      create: true
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
@@ -83,4 +88,6 @@
     - vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa"
     - vim -es -u vimrc -i NONE -c "PlugUpdate" -c "qa"
     - vim -es -u vimrc -i NONE -c "CocInstall coc-pyright" -c "qa"
+    - git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+    - nvim --headless -c 'quitall'
 
