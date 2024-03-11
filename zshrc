@@ -170,7 +170,7 @@ function ec2get() {
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-alias vim='mvim -v'
+alias vim='nvim'
 alias vi='mvim -v'
 alias ll='eza -alF -snew' 
 alias xl='xplr'
