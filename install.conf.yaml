@@ -88,6 +88,7 @@
     - vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa"
     - vim -es -u vimrc -i NONE -c "PlugUpdate" -c "qa"
     - vim -es -u vimrc -i NONE -c "CocInstall coc-pyright" -c "qa"
+    - pip3 install --user --upgrade neovim
     - git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
     - nvim --headless -c 'quitall'
 
