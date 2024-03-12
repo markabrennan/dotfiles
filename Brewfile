@@ -1,5 +1,6 @@
 tap "aws/aws"
 tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "lucagrulla/tap"
 tap "saulpw/vd"
@@ -65,6 +66,8 @@ brew "gdal"
 brew "gh"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Interactive computing in Python
+brew "ipython"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Framework for scientific data networking
@@ -75,6 +78,8 @@ brew "lsd"
 brew "macvim"
 # Mac App Store command-line interface
 brew "mas"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # HTTP/2 C Library
 brew "nghttp2"
 # Platform built on V8 to build network applications
@@ -123,6 +128,10 @@ brew "lucagrulla/tap/cw"
 brew "saulpw/vd/visidata"
 # Universal database tool and SQL client
 cask "dbeaver-community"
+# Developer targeted fonts with a high number of glyphs
+cask "font-anonymice-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-ubuntu-mono-nerd-font"
 # Plugin for AWS CLI to start and end sessions that connect to managed instances
 cask "session-manager-plugin"
 mas "Alfred", id: 405843582
