@@ -74,6 +74,14 @@ return {
       cmd = "Obsession",
         -- Configuration options for vim-flake8, if any
     },
+    {
+      "stevearc/oil.nvim",
+      cmd = "Oil",
+    },
+    {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    },
     -- Add more plugins here
   },
 
@@ -142,6 +150,11 @@ return {
       vim.g.netrw_list_hide = ''
       vim.api.nvim_set_hl(0, "Visual", { bg = "DarkGrey", fg = "white" })
       vim.opt.mouse = ""
+
+      require("oil").setup()
+      require('lualine').setup({
+        options = { theme = 'modus-vivendi' }
+    })
 
       require('telescope').setup({
       defaults = {
