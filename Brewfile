@@ -86,6 +86,8 @@ brew "nghttp2"
 brew "node"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
 # Cross-platform application and UI framework
 brew "qt@5"
 # PDF rendering library (based on the xpdf-3.0 code base)

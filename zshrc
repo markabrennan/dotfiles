@@ -219,6 +219,8 @@ eval "$(pyenv virtualenv-init -)"
 eval "$(pyenv init -)"
 # virtualenv settings
 export WORKON_HOME=$HOME/.virtualenvs   # Optional
+# ensue we get the virtualenv prompt
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PROJECT_HOME=$HOME/projects      # Optional
 #source /Users/markbrennan/.pyenv/shims/virtualenvwrapper.sh
 
