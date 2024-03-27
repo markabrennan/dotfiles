@@ -64,6 +64,8 @@ brew "poppler"
 brew "gdal"
 # GitHub command-line tool
 brew "gh"
+# Improved top (interactive process viewer)
+brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Interactive computing in Python
@@ -144,3 +146,4 @@ mas "OneTab", id: 1540160809
 mas "Ulysses", id: 1225570693
 mas "WhatsApp", id: 1147396723
 mas "Xcode", id: 497799835
+mas "‎WhatsApp", id: 310633997
