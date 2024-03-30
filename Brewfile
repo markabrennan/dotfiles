@@ -12,6 +12,8 @@ brew "act"
 brew "xz"
 # New file format for still image compression
 brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Next generation open source RPC library and framework
@@ -26,6 +28,8 @@ brew "awscli"
 brew "bat"
 # Collection of portable C++ source libraries
 brew "boost"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # Core application library for C
 brew "glib"
 # Vector graphics library with cross-device output support
@@ -54,6 +58,8 @@ brew "gnutls"
 brew "gnupg"
 # Library access to GnuPG
 brew "gpgme"
+# File format designed to store large amounts of data
+brew "hdf5"
 # GNOME XML library
 brew "libxml2"
 # Library for JPEG-2000 image manipulation

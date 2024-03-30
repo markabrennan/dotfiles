@@ -58,6 +58,10 @@ return {
       "jlanzarotta/bufexplorer",
       keys = { "<leader>be" },
     },
+    {
+      "psf/black",
+      cmd = "Black",
+    },
     -- {
     --   "github/copilot.vim",
     --   cmd = "Copilot",
