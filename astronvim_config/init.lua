@@ -218,6 +218,8 @@ return {
         options = { theme = 'modus-vivendi' }
     })
 
+      -- require("user.lsp_custom").config()
+
       require('telescope').setup({
       defaults = {
         vimgrep_arguments = {
