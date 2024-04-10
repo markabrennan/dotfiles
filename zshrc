@@ -158,7 +158,8 @@ function ec2get() {
  if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='/usr/bin/vim'
  else
-   export EDITOR='/usr/local/bin/mvim -v'
+   export EDITOR='/usr/bin/vim'
+   # export EDITOR='/usr/local/bin/mvim -v'
  fi
 
 # Compilation flags

@@ -14,3 +14,5 @@ export AIRFLOW_HOME=/Users/markb/projects/greenfield/airflow/
 #alias pip=noglob pip
 
 
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
