@@ -40,8 +40,6 @@ brew "pycparser"
 brew "cffi"
 # Computational Geometry Algorithms Library
 brew "cgal"
-# Amazon CloudWatch command-line Tool
-brew "cloud-watch"
 # Cross-platform make
 brew "cmake"
 # Load/unload environment variables based on $PWD
@@ -50,6 +48,8 @@ brew "direnv"
 brew "docutils"
 # Modern, maintained replacement for ls
 brew "eza"
+# Lint your Python code for style and logical errors
+brew "flake8"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
@@ -82,6 +82,8 @@ brew "jq"
 brew "libdap"
 # Clone of ls with colorful output, file type icons, and more
 brew "lsd"
+# Powerful, lightweight programming language
+brew "lua"
 # GUI for vim, made for macOS
 brew "macvim"
 # Mac App Store command-line interface
@@ -96,6 +98,8 @@ brew "node"
 brew "openssl@1.1"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Python package management tool
+brew "poetry"
 # Cross-platform application and UI framework
 brew "qt@5"
 # PDF rendering library (based on the xpdf-3.0 code base)
@@ -144,11 +148,18 @@ cask "font-anonymice-nerd-font"
 cask "font-ubuntu-mono-nerd-font"
 # Plugin for AWS CLI to start and end sessions that connect to managed instances
 cask "session-manager-plugin"
+mas "1Password for Safari", id: 1569813296
 mas "Alfred", id: 405843582
 mas "Fantastical", id: 975937182
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
 mas "Kindle Classic", id: 405399194
 mas "LG Screen Manager", id: 1142051783
+mas "Numbers", id: 409203825
 mas "OneTab", id: 1540160809
+mas "Pages", id: 409201541
+mas "Slack", id: 803453959
 mas "Ulysses", id: 1225570693
 mas "WhatsApp", id: 1147396723
 mas "Xcode", id: 497799835
