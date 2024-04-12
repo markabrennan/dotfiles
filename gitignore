@@ -1,4 +1,13 @@
 #  .gitignore source: https://github.com/github/gitignore/blob/master/Python.gitignore
+#
+#  New additions based on personal files I'm generating
+#  in the Greenfield repo and want to exclude
+data/client_audience_zqx_sample_1k_orig.csv
+data/mb_users.yaml
+generate_large_csv.py
+output.csv
+received_metrics.json
+site-packages
 
 # scratch files/directories
 scratch/

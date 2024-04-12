@@ -201,7 +201,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/opt/openssl@3.2/bin:$PATH"
 export PATH="/Users/markb/.vim/bundle/fzf/bin:$PATH"
-export PATH="/Users/markb/projects/greenfield/scripts:$PATH"
+export PATH="/Users/mark/projects/greenfield/scripts:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
 # Previously needed to clean up old paths
