@@ -8,6 +8,11 @@ generate_large_csv.py
 output.csv
 received_metrics.json
 site-packages
+audience_1m.csv
+audience_500K.csv
+audience_100K.csv
+metrics.sql
+study_data.sql
 
 # scratch files/directories
 scratch/
