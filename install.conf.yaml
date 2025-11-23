@@ -75,6 +75,22 @@
       path: astronvim_config
       force: true
       create: true
+    ~/.config/ghostty/config:
+      path: ghostty-config
+      force: true
+      create: true
+    ~/.psqlrc:
+      path: psqlrc
+      force: true
+      create: true
+    ~/.fzf.zsh:
+      path: fzf.zsh
+      force: true
+      create: true
+    ~/.tmux.conf:
+      path: tmux.conf
+      force: true
+      create: true
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
