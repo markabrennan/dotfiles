@@ -1,0 +1,8 @@
+\set QUIET 1
+\timing
+\x auto
+\set VERBOSITY verbose
+\set PROMPT1 '%n@%/%R%# '
+\pset null '(null)'
+\set HISTSIZE 10000
+\unset QUIET

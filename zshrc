@@ -175,6 +175,7 @@ alias vim='nvim'
 alias vi='mvim -v'
 alias ll='eza -alF -snew' 
 alias xl='xplr'
+alias bpvim='pdm run /opt/homebrew/bin/nvim'
 
 ###########################################################
 
@@ -201,7 +202,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/opt/openssl@3.2/bin:$PATH"
 export PATH="/Users/markb/.vim/bundle/fzf/bin:$PATH"
-export PATH="/Users/mark/projects/greenfield/scripts:$PATH"
+export PATH="/Users/mark/projects/blastpoint/src/util/scripts:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
 # Previously needed to clean up old paths
@@ -233,3 +234,11 @@ export PROJECT_HOME=$HOME/projects      # Optional
 # Eza
 ###########################################################
 export EZA_COLORS="da=32"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
