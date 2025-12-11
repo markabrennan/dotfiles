@@ -4,6 +4,11 @@
 #  in the Greenfield repo and want to exclude
 .claude/
 my_sql/
+architecture.md
+collaborating-with-gpt5-at-blastpoint.md
+working-with-gpt5.md
+teco_metrics_sql.sql
+cohort.json
 
 all_audience_history_ddl.sql
 all_audience_poc_ddl_20250821.sql
