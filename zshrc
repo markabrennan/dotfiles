@@ -1,4 +1,4 @@
-set -o vi
+#set -o vi
 bindkey -v
 # Taking some options from:
 # https://scriptingosx.com/2019/06/moving-to-zsh-part-3-shell-options/
@@ -110,6 +110,8 @@ plugins+=(git zsh-bat)
 
 
 source $ZSH/oh-my-zsh.sh
+# This should go AFTER the oh-my-zsh initialization
+zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 
 
 ###########################################################

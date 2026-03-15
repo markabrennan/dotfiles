@@ -2,6 +2,13 @@
 #
 #  New additions based on personal files I'm generating
 #  in the Greenfield repo and want to exclude
+fast_api_feature_flags_refactor_summary_rationale.md
+health_test_prompt.md
+releases_containing_exp_members_count_opt.txt
+sample-env-file
+test_fix.py
+ngrok.yml
+env.save
 .claude/
 my_sql/
 architecture.md
