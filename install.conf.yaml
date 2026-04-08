@@ -71,10 +71,6 @@
       path: papercolor-theme/colors/PaperColor.vim
       force: true
       create: true
-    ~/.config/astronvim/lua/user:
-      path: astronvim_config
-      force: true
-      create: true
     ~/.config/ghostty/config:
       path: ghostty-config
       force: true
