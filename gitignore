@@ -2,6 +2,19 @@
 #
 #  New additions based on personal files I'm generating
 #  in the Greenfield repo and want to exclude
+claude-sessions
+prismatic-dev-pub.der
+hubspot-job-timeout-analysis.md
+bench_orjson_serialization.py
+docs/plans/2026-06-22-prismatic-kms-signing-implementation.md
+src/web/usccreditunion_bad_emails
+migrate_household_income.py
+migrate_household_income_summary.md
+test_migrate_household_income.py
+my-env-file
+devops_platform_tables
+schema_based_platform_tables.txt
+schema_based_platform_tables
 fast_api_feature_flags_refactor_summary_rationale.md
 src/util/scripts/bpenv.changes
 health_test_prompt.md

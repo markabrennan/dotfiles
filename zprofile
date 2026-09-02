@@ -16,3 +16,7 @@ export AIRFLOW_HOME=/Users/markb/projects/greenfield/airflow/
 
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# >>> Codex installer >>>
+export PATH="/Users/mark/.local/bin:$PATH"
+# <<< Codex installer <<<

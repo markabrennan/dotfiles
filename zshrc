@@ -245,3 +245,28 @@ export NVM_DIR="$HOME/.nvm"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 alias fr='source ~/.fzf.zsh'
+
+
+unresolved() {
+  local repo owner name
+  repo=$(gh repo view --json nameWithOwner -q .nameWithOwner) || return 1
+  owner="${repo%/*}"; name="${repo#*/}"
+  gh api graphql \
+    -f owner="$owner" -f name="$name" -F pr="$1" \
+    -f query='
+      query($owner:String!, $name:String!, $pr:Int!) {
+        repository(owner:$owner, name:$name) {
+          pullRequest(number:$pr) {
+            reviewThreads(first:100) {
+              nodes {
+                isResolved isOutdated path line
+                comments(first:1){ nodes { author{login} url body } }
+              }
+            }
+          }
+        }
+      }' \
+    --jq '.data.repository.pullRequest.reviewThreads.nodes[]
+          | select(.isResolved == false)
+          | {path, line, author: .comments.nodes[0].author.login, url: .comments.nodes[0].url}'
+}
