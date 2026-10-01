@@ -1,11 +1,18 @@
 tap "aws/aws"
-tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/services"
 tap "lucagrulla/tap"
 tap "saulpw/vd"
 # C++ Common Libraries
 brew "abseil"
+# Command-line fuzzy finder (used by fzf.zsh)
+brew "fzf"
+# Git extension for large files (gitconfig requires it)
+brew "git-lfs"
+# Node version manager (loaded in zshrc)
+brew "nvm"
+# Python package manager (bpvim alias)
+brew "pdm"
+# Postgres 16 client/server (zshrc puts its bin on PATH)
+brew "postgresql@16"
 # Run your GitHub Actions locally
 brew "act"
 # General-purpose data compression with high compression ratio
@@ -94,8 +101,8 @@ brew "neovim"
 brew "nghttp2"
 # Platform built on V8 to build network applications
 brew "node"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
+# Cryptography and SSL/TLS Toolkit (openssl@1.1 is disabled in Homebrew)
+brew "openssl@3"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Python package management tool
@@ -116,8 +123,6 @@ brew "postgis"
 brew "pyenv"
 # Pyenv plugin to manage virtualenv
 brew "pyenv-virtualenv"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Persistent key-value database, with built-in net interface
 brew "redis", restart_service: true
 # Search tool like grep and The Silver Searcher
@@ -140,6 +145,8 @@ brew "aws/aws/amazon-efs-utils"
 brew "lucagrulla/tap/cw"
 # Terminal utility for exploring and arranging tabular data
 brew "saulpw/vd/visidata"
+# Terminal emulator (config: ghostty.config)
+cask "ghostty"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # Developer targeted fonts with a high number of glyphs
@@ -148,19 +155,16 @@ cask "font-anonymice-nerd-font"
 cask "font-ubuntu-mono-nerd-font"
 # Plugin for AWS CLI to start and end sessions that connect to managed instances
 cask "session-manager-plugin"
-mas "1Password for Safari", id: 1569813296
 mas "Alfred", id: 405843582
 mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
-mas "Kindle Classic", id: 405399194
 mas "LG Screen Manager", id: 1142051783
 mas "Numbers", id: 409203825
 mas "OneTab", id: 1540160809
 mas "Pages", id: 409201541
 mas "Slack", id: 803453959
 mas "Ulysses", id: 1225570693
-mas "WhatsApp", id: 1147396723
 mas "Xcode", id: 497799835
-mas "‎WhatsApp", id: 310633997
+mas "WhatsApp", id: 310633997

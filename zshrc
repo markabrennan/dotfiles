@@ -198,13 +198,13 @@ setopt appendhistory
 ###########################################################
 # PATH settings
 ###########################################################
+# Homebrew's prefix: /opt/homebrew on Apple silicon (set by brew shellenv in zprofile).
+BREW_PREFIX="${HOMEBREW_PREFIX:-/opt/homebrew}"
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-#export PATH="/usr/local/opt/openssl@3/bin:$PATH"
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-export PATH="/usr/local/opt/openssl@3.2/bin:$PATH"
-export PATH="/Users/markb/.vim/bundle/fzf/bin:$PATH"
-export PATH="/Users/mark/projects/blastpoint/src/util/scripts:$PATH"
+export PATH="${BREW_PREFIX}/opt/openssl@3/bin:$PATH"
+# Work scripts: only added where the BlastPoint checkout exists.
+[[ -d "$HOME/projects/blastpoint/src/util/scripts" ]] && export PATH="$HOME/projects/blastpoint/src/util/scripts:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
 # Previously needed to clean up old paths
@@ -213,12 +213,12 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 
 # Apparently this is need to resolve openssl (-lssl) libraries for linking
 # for the psycopg2 pip install!
-export LDFLAGS="-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib" 
+export LDFLAGS="-L${BREW_PREFIX}/opt/openssl@3/lib"
+export CPPFLAGS="-I${BREW_PREFIX}/opt/openssl@3/include"
 
 ###########################################################
 # Pyenv
 ###########################################################
-export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv virtualenv-init -)"
 eval "$(pyenv init -)"
 # virtualenv settings

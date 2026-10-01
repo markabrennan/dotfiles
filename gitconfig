@@ -1,14 +1,19 @@
 [user]
 	name = Mark Brennan
-	email = mark.brennan@blastpoint.io
+	# Email is per-machine: it lives in ~/.gitconfig.local (not in this repo).
+	# useConfigOnly makes git refuse to commit if it's missing, rather than guess.
+	useConfigOnly = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 [core]
-	excludesfile = /Users/mark/.gitignore
+	excludesfile = ~/.gitignore
 [fetch]
 	prune = true
 [pull]
 	rebase = true
+# Per-machine settings (user.email, etc). Keep this LAST so it can override the above.
+[include]
+	path = ~/.gitconfig.local

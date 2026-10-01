@@ -37,9 +37,15 @@ if type brew >/dev/null 2>&1; then
 else
   echo "brew doesn't exist, continuing with install"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  # A fresh install isn't on PATH yet in this shell; load it so 'brew bundle' works.
+  if [[ -x /opt/homebrew/bin/brew ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  elif [[ -x /usr/local/bin/brew ]]; then
+    eval "$(/usr/local/bin/brew shellenv)"
+  fi
 fi
 
 
 # Depends on Brewfile here:
-brew bundle --verbose
+brew bundle --verbose --file="${0:A:h}/Brewfile"
 

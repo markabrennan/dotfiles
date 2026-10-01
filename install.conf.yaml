@@ -5,11 +5,10 @@
 - clean: ['~']
 
 - create:
-    - ~/dotfiles/vim/undo-history
-    - ~/dotfiles/vim/plugged
-    - ~/dotfiles/vim/autoload
-    - ~/dotfiles/vim/colors
-    - ~/.config/nvim
+    - ~/.dotfiles/vim/undo-history
+    - ~/.dotfiles/vim/plugged
+    - ~/.dotfiles/vim/autoload
+    - ~/.dotfiles/vim/colors
 
 - link:
     ~/.vim:
@@ -72,7 +71,7 @@
       force: true
       create: true
     ~/.config/ghostty/config:
-      path: ghostty-config
+      path: ghostty.config
       force: true
       create: true
     ~/.psqlrc:
@@ -89,7 +88,11 @@
       create: true
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
+    - command: ./setup_git_identity.sh
+      description: Per-machine git email (~/.gitconfig.local)
+      stdin: true
+      stdout: true
+      stderr: true
     - command: ./setup_homebrew.zsh
       stdout: true
       stderr: true
@@ -100,7 +103,9 @@
     - vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa"
     - vim -es -u vimrc -i NONE -c "PlugUpdate" -c "qa"
     - vim -es -u vimrc -i NONE -c "CocInstall coc-pyright" -c "qa"
-    - pip3 install --user --upgrade neovim
-    - git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+    # Homebrew's Python refuses plain 'pip install' (PEP 668); --user keeps it out of brew's files.
+    - python3 -m pip install --user --break-system-packages --upgrade pynvim
+    # My own AstroNvim config (its own repo). Skipped if already cloned.
+    - '[ -d ~/.config/nvim/.git ] || git clone git@github.com:markabrennan/astronvim_config.git ~/.config/nvim'
     - nvim --headless -c 'quitall'
 

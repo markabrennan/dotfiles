@@ -9,7 +9,14 @@ DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${BASEDIR}"
+
+# On Apple silicon, Homebrew lives in /opt/homebrew, which isn't on PATH on a fresh Mac.
+# Adding it here (even before brew exists) means every later Dotbot step can find
+# brew-installed tools as soon as setup_homebrew.zsh has installed them.
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:${PATH}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive "${DOTBOT_DIR}"
+# Check out ALL submodules (oh-my-zsh, plugins, dotbot) BEFORE Dotbot links anything:
+# the link step writes into ohmyzsh/custom, and git won't check out into a non-empty folder.
+git submodule update --init --recursive
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
