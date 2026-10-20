@@ -95,8 +95,8 @@ brew "lua"
 brew "macvim"
 # Mac App Store command-line interface
 brew "mas"
-# Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
+# Version manager for neovim (pins nvim 0.10.1 to match AstroNvim v4 config)
+brew "bob"
 # HTTP/2 C Library
 brew "nghttp2"
 # Platform built on V8 to build network applications

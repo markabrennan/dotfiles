@@ -202,6 +202,8 @@ setopt appendhistory
 BREW_PREFIX="${HOMEBREW_PREFIX:-/opt/homebrew}"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="${BREW_PREFIX}/opt/openssl@3/bin:$PATH"
+# Neovim managed by bob (pinned to match work machine).
+[[ -d "$HOME/Library/Application Support/bob/nvim-bin" ]] && export PATH="$HOME/Library/Application Support/bob/nvim-bin:$PATH"
 # Work scripts: only added where the BlastPoint checkout exists.
 [[ -d "$HOME/projects/blastpoint/src/util/scripts" ]] && export PATH="$HOME/projects/blastpoint/src/util/scripts:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
