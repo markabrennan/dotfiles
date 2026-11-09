@@ -11,8 +11,8 @@ brew "git-lfs"
 brew "nvm"
 # Python package manager (bpvim alias)
 brew "pdm"
-# Postgres 16 client/server (zshrc puts its bin on PATH)
-brew "postgresql@16"
+# Postgres 18 client/server (zshrc puts its bin on PATH)
+brew "postgresql@18", restart_service: true
 # Run your GitHub Actions locally
 brew "act"
 # General-purpose data compression with high compression ratio
@@ -111,8 +111,6 @@ brew "poetry"
 brew "qt@5"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler-qt5"
-# Object-relational database system
-brew "postgresql@14", restart_service: true
 # Protocol buffers library
 brew "protobuf-c"
 # C++ wrapper library around CGAL

@@ -78,6 +78,10 @@
       path: psqlrc
       force: true
       create: true
+    ~/.inputrc:
+      path: inputrc
+      force: true
+      create: true
     ~/.fzf.zsh:
       path: fzf.zsh
       force: true

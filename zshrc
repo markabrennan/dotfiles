@@ -238,7 +238,11 @@ export PROJECT_HOME=$HOME/projects      # Optional
 # Eza
 ###########################################################
 export EZA_COLORS="da=32"
-export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
+
+# Python REPL: classic REPL so readline/editline vi mode works (see pythonstartup.py)
+export PYTHON_BASIC_REPL=1
+export PYTHONSTARTUP="$HOME/.dotfiles/pythonstartup.py"
 
 
 export NVM_DIR="$HOME/.nvm"
